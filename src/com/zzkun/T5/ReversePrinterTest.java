@@ -33,7 +33,4 @@ public class ReversePrinterTest {
         KList<String> list = new KList<>();
         ReversePrinter.reversePrintKList(list);
     }
-
-
-
 }
