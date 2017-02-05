@@ -9,7 +9,7 @@ import java.util.List;
  * 全排列递归解法
  * Created by kun36 on 2017/2/4.
  */
-public class Solver2 {
+public class Solution2 {
 
     private static void dfs(LinkedList<Character> list, int deep, int n) {
         if(deep >= n) {

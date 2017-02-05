@@ -2,9 +2,8 @@ package com.zzkun.T8;
 
 /**
  * 递归解法，思想基于分治...
- * Created by kun36 on 2017/2/3.
  */
-public class MinFinder {
+public class Solution {
 
     private int dfs(int[] arr, int L, int R) {
         if(R - L <= 1)
@@ -23,7 +22,7 @@ public class MinFinder {
         return dfs(arr, L, mid);
     }
 
-    public int findMin(int[] arr) {
-        return dfs(arr, 0, arr.length - 1);
+    public int minNumberInRotateArray(int [] array) {
+        return dfs(array, 0, array.length - 1);
     }
 }

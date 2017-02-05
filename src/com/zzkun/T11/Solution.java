@@ -1,9 +1,6 @@
 package com.zzkun.T11;
 
-/**
- * Created by kun36 on 2017/2/4.
- */
-public class Calculator {
+public class Solution {
 
     private static double powCore(double x, int y) {
         double res = 1, base = x;
@@ -16,7 +13,7 @@ public class Calculator {
         return res;
     }
 
-    public static double pow(double x, int y) throws Exception {
+    public double Power(double x, int y) throws Exception {
         if(Math.abs(x) <= 1e-7 && y <= 0)
             throw new Exception("InvalidInput");
         if(y >= 0) return powCore(x, y);
