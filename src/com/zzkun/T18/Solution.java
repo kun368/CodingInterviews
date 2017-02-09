@@ -16,6 +16,5 @@ public class Solution {
             return false;
         return (root1.val == root2.val && dfsCheck(root1, root2))
                 || HasSubtree(root1.left, root2) || HasSubtree(root1.right, root2);
-
     }
 }
